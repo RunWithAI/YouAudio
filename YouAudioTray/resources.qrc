@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>translations/YouAudioTray_zh_CN.qm</file>
+        <file>youaudiotray.jpg</file>
+    </qresource>
+</RCC>

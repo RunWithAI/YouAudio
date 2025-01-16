@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ _('YouAudio - Words') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    <style>
+        .container {
+            height: calc(100vh - 40px); /* Account for body padding */
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            max-width: none;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .table-container {
+            height: calc(100vh - 250px); /* Leave space for header, title, and controls */
+            overflow-y: auto;
+            margin-top: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+
+        .word-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1;
+        }
+
+        thead::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: left;
+        }
+
+        tbody {
+            background-color: white;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .btn {
+            margin-right: 5px;
+        }
+
+        /* Keep existing button styles */
+        .btn-primary.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .filter-group, .sort-group, .page-size-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        select {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            min-width: 120px;
+        }
+
+        .toggle-button {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #333;
+        }
+
+        .toggle-button:hover {
+            background: #f0f0f0;
+        }
+
+        .toggle-button.active {
+            background: #007bff;
+            color: white;
+            border-color: #0056b3;
+        }
+
+        .removed {
+            opacity: 0.9;
+        }
+
+        .removed td {
+            color: #252424;
+        }
+
+        .action-button {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .action-button:hover {
+            background: #f0f0f0;
+        }
+
+        .action-button.restore {
+            color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .action-button.restore:hover {
+            background: #dc3545;
+            color: white;
+        }
+
+        .action-button.remove {
+            color: #28a745;
+            border-color: #28a745;
+        }
+
+        .action-button.remove:hover {
+            background: #28a745;
+            color: white;
+        }
+
+        /* Add column width constraints */
+        .word-table th:nth-child(1), /* Word */
+        .word-table td:nth-child(1) {
+            width: 15%;
+        }
+        
+        .word-table th:nth-child(2), /* Translation */
+        .word-table td:nth-child(2) {
+            width: 30%;
+            max-width: 30%;
+        }
+        
+        .word-table th:nth-child(3), /* Context */
+        .word-table td:nth-child(3) {
+            width: 30%;
+            max-width: 30%;
+        }
+        
+        .word-table th:nth-child(4), /* Date */
+        .word-table td:nth-child(4) {
+            width: 15%;
+        }
+        
+        .word-table th:nth-child(5), /* Actions */
+        .word-table td:nth-child(5) {
+            width: 10%;
+        }
+
+        /* Add text overflow handling */
+        .word-table td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* Allow Translation column to wrap if needed */
+        .word-table td:nth-child(2) {
+            white-space: normal;
+        }
+        /* Allow Context column to wrap if needed */
+        .word-table td:nth-child(3) {
+            white-space: normal;
+        }
+
+        .word-delete-button {
+            margin-left: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid #ff4444;
+            background-color: white;
+            color: #ff4444;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .word-delete-button:hover {
+            background-color: #ff4444;
+            color: white;
+        }
+
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
+        .pagination-controls button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .pagination-controls button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .pagination-controls button:disabled {
+            background-color: #eee;
+            cursor: not-allowed;
+        }
+
+        .pagination-controls span {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <a href="{{ url_for('channels') }}" class="nav-link ">📺 {{ _('Channels') }}</a>
+            <a href="{{ url_for('player') }}" class="nav-link">🎵{{ _('Audios') }}</a>
+            <a href="{{ url_for('words') }}" class="nav-link active">📝{{ _('Words') }}</a>
+            <a href="{{ url_for('statistics') }}" class="nav-link">📊 {{ _('Statistics') }}</a>
+        </div>
+    </div>
+
+    <div class="container words-container">
+        <h1>{{ _('Collected Words') }}</h1>
+        
+        <div class="controls">
+            <div class="filter-group">
+                <label>{{ _('Filter') }}:</label>
+                <button class="toggle-button active" data-filter="all">{{ _('All') }}</button>
+                <button class="toggle-button" data-filter="active">{{ _('Forgotten') }}</button>
+                <button class="toggle-button" data-filter="removed">{{ _('Mastered') }}</button>
+            </div>
+            
+            <div class="sort-group">
+                <label>{{ _('Sort by') }}:</label>
+                <select id="sortField">
+                    <option value="text">{{ _('Word') }}</option>
+                    <option value="collected_date">{{ _('Date') }}</option>
+                </select>
+                <select id="sortOrder">
+                    <option value="asc">{{ _('Ascending') }}</option>
+                    <option value="desc">{{ _('Descending') }}</option>
+                </select>
+            </div>
+
+            <div class="page-size-group">
+                <label>{{ _('Words per page') }}:</label>
+                <select id="pageSize">
+                    <option value="10">10</option>
+                    <option value="20" selected>20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="word-table">
+                <thead>
+                    <tr>
+                        <th>{{ _('Word') }}</th>
+                        <th>{{ _('Translation') }}</th>
+                        <th>{{ _('Context') }}</th>
+                        <th>{{ _('Date') }}</th>
+                        <th>{{ _('Actions') }}</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsTableBody">
+                    <!-- Words will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="paginationControls" class="pagination-controls">
+        </div>
+    </div>
+
+    <script>
+        // Pass translations to JavaScript
+        window.translations = {
+            ...window.translations,
+            'forgotten': "{{ _('Forgotten') }}",
+            'mastered': "{{ _('Mastered') }}",
+            'previous': "{{ _('Previous') }}",
+            'next': "{{ _('Next') }}",
+            'delete_confirm': "{{ _('Are you sure you want to delete this word?') }}"
+        };
+    </script>
+    <script src="{{ url_for('static', filename='js/words.js') }}"></script>
+</body>
+</html>

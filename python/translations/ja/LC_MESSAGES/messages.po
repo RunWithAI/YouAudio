@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 21:41-0800\n"
+"PO-Revision-Date: 2025-01-06 21:41-0800\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - チャンネル"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - オーディオ"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - 単語"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - 統計"
+
+msgid "Channels"
+msgstr "チャンネル"
+
+msgid "Audios"
+msgstr "オーディオ"
+
+msgid "Words"
+msgstr "単語"
+
+msgid "Statistics"
+msgstr "統計"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Enter channel name..."
+msgstr "チャンネル名を入力してください..."
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Favorite"
+msgstr "お気に入り"
+
+msgid "Please enter a channel name to search"
+msgstr "検索するチャンネル名を入力してください"
+
+msgid "Videos"
+msgstr "動画"
+
+msgid "Latest audios by selected channel"
+msgstr "選択したチャンネルの最新オーディオ"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Proxy"
+msgstr "プロキシ"
+
+msgid "Target Language"
+msgstr "目標言語"
+
+msgid "Native Language"
+msgstr "ネイティブ言語"
+
+msgid "Proxy Type"
+msgstr "プロキシタイプ"
+
+msgid "Host"
+msgstr "ホスト"
+
+msgid "Port"
+msgstr "ポート"
+
+msgid "Authentication (Optional)"
+msgstr "認証（オプション）"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Leave empty for direct connection"
+msgstr "直接接続する場合は空白にしてください"
+
+msgid "Save"
+msgstr "セーブ"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "No channels found"
+msgstr "チャンネルが見つかりません"
+
+msgid "Searching channels..."
+msgstr "チャンネルを検索中..."
+
+msgid "Error searching channels"
+msgstr "チャンネルを検索する際にエラーが発生しました"
+
+msgid "No favorite channels yet"
+msgstr "お気に入りのチャンネルはまだありません"
+
+msgid "No videos found"
+msgstr "動画が見つかりません"
+
+msgid "Error loading videos"
+msgstr "動画をロードする際にエラーが発生しました"
+
+msgid "Saved"
+msgstr "保存済み"
+
+msgid "Saving..."
+msgstr "保存しています..."
+
+msgid "Save Failed"
+msgstr "保存に失敗しました"
+
+msgid "All Segments"
+msgstr "全てのセグメント"
+
+msgid "Marked Segments"
+msgstr "マークされたセグメント"
+
+msgid "Play"
+msgstr "再生"
+
+msgid "Previous"
+msgstr "前のページ"
+
+msgid "Replay"
+msgstr "再生"
+
+msgid "Next"
+msgstr "次のページ"
+
+msgid "Selected Text"
+msgstr "選択されたテキスト"
+
+msgid "Translation"
+msgstr "翻訳"
+
+msgid "Today"
+msgstr "今日"
+
+msgid "Audio Listening Duration"
+msgstr "音声再生時間"
+
+msgid "minutes"
+msgstr "分"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "音声再生時間（分）"
+
+msgid "Words Mastered"
+msgstr "掌握した単語"
+
+msgid "Words Forgotten"
+msgstr "遗忘した単語"
+
+msgid "Past 7 days"
+msgstr "過去7日間"
+
+msgid "Collected Words"
+msgstr "収集した単語"
+
+msgid "Filter"
+msgstr "フィルタ"
+
+msgid "All"
+msgstr "全て"
+
+msgid "Forgotten"
+msgstr "遗忘"
+
+msgid "Mastered"
+msgstr "掌握"
+
+msgid "Sort by"
+msgstr "並べ替え"
+
+msgid "Word"
+msgstr "単語"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Ascending"
+msgstr "昇順"
+
+msgid "Descending"
+msgstr "降順"
+
+msgid "Context"
+msgstr "コンテキスト"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Mastered"
+msgstr "掌握"
+
+msgid "Forgotten"
+msgstr "遗忘"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "10 per page"
+msgstr "1ページ10個"
+
+msgid "20 per page"
+msgstr "1ページ20個"  
+
+msgid "30 per page"    
+msgstr "1ページ30個"
+
+msgid "50 per page"
+msgstr "1ページ50個"
+
+
+msgid "All Durations'
+msgstr "全期間'
+
+msgid "0-10 minutes'
+msgstr "0分から10分'
+
+msgid "10-30 minutes'
+msgstr "10分から30分'
+
+msgid "30+ minutes'
+msgstr "30分超'
+
+msgid "Date (Newest)"
+msgstr "日付（最新）"
+
+msgid "Most Viewed"
+msgstr "最も見られた"
+
+msgid "Top Rated"
+msgstr "最も評価された"
+
+msgid "Page"
+msgstr "ページ"
+
+msgid "Loading audios..."    
+msgstr "オーディオをロード中..."
+
+msgid "Your browser does not support the audio element."
+msgstr "ブラウザはオーディオ要素をサポートしていません。"
+
+msgid "Summary"
+msgstr "概要"
+
+msgid "Fetching..."
+msgstr "取得中..."
+
+msgid "LLM API Keys"
+msgstr "LLM APIキー"
+
+msgid "Tencent Hunyuan"
+msgstr "腾讯韦源"
+
+msgid "Alibaba Qianwen"
+msgstr "阿里巴巴千文"
+
+msgid "Default LLM Service"
+msgstr "デフォルトLLMサービス"
+
+msgid "No transcript available to summarize"
+msgstr "要約するためのトランスクリプトがありません"
+
+msgid "Auto-save"
+msgstr "自動保存"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "自動保存間隔 (分)"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "自動保存を無効にするには0に設定してください"
+
+msgid "Words per page"
+msgstr "ページあたりの単語数"
+
+msgid "Statistics Over Time"
+msgstr "時間ごとの統計"
+
+msgid "Past Week"
+msgstr "過去一週間"
+
+msgid "Past Month"
+msgstr "過去一ヶ月"
+
+msgid "Past Quarter"
+msgstr "過去一季度"
+
+msgid "Past Year"
+msgstr "過去一年"
+
+msgid "Word saved successfully!"
+msgstr "単語を保存しました!"
+
+msgid "Failed to save word."
+msgstr "単語の保存に失敗しました。"
+
+msgid "Failed to generate summary."
+msgstr "要約の生成に失敗しました。"
+
+msgid "Please set your API key first."
+msgstr "最初にAPIキーを設定してください。"
+
+msgid "Failed to get translation."
+msgstr "翻訳の取得に失敗しました。"
+
+msgid "Loading channels..."
+msgstr "チャンネルを読み込み中..."

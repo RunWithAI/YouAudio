@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('YouAudio - Channels') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <a href="{{ url_for('channels') }}" class="nav-link active">📺 {{ _('Channels') }}</a>
+            <a href="{{ url_for('player') }}" class="nav-link">🎵{{ _('Audios') }}</a>
+            <a href="{{ url_for('words') }}" class="nav-link">📝{{ _('Words') }}</a>
+            <a href="{{ url_for('statistics') }}" class="nav-link">📊 {{ _('Statistics') }}</a>
+        </div>
+        <div class="nav-right">
+            <button onclick="showSettingDialog()" class="nav-button">
+                <i class="fas fa-cog" style="color: darkblue;"></i> {{ _('Config') }}
+            </button>           
+        </div>
+    </div>
+
+    <div class="channels-layout">
+        <div class="channels-section">
+            <h1>{{ _('Channels') }}</h1>
+            <div class="search-box">
+                <input type="text" id="channel-search" placeholder="{{ _('Enter channel name...') }}">
+                <button id="search-button" class="secondary-button">{{ _('Search') }}</button>
+                <button id="favorite-toggle" class="primary-button">{{ _('Favorite') }}</button>
+            </div>
+            <div id="search-notification" class="notification info hidden">
+                {{ _('Please enter a channel name to search') }}
+            </div>
+            <div id="channels-container">
+                <div id="search-results" class="results-container"></div>
+                <div id="favorite-channels-list" class="channels-list" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div class="videos-section">
+            <h1>{{ _('Audios') }}</h1>
+
+            <div id="videos-list" class="videos-list">
+                <div class="placeholder-text">{{ _('Latest audios by selected channel') }}</div>
+            </div>
+            <div class="videos-foot">
+                <select id="videos-per-page" class="select-control page-size">
+                    <option value="10" selected>{{ _('10 per page') }}</option>
+                    <option value="20">{{ _('20 per page') }}</option>
+                    <option value="30" >{{ _('30 per page') }}</option>
+                    <option value="50">{{ _('50 per page') }}</option>
+                </select>
+                <select id="duration-filter" class="select-control duration-filter">
+                    <option value="all" selected>{{ _('All Durations') }}</option>
+                    <option value="short">{{ _('0-10 minutes') }}</option>
+                    <option value="medium">{{ _('10-30 minutes') }}</option>
+                    <option value="long">{{ _('30+ minutes') }}</option>
+                </select>     
+                <div class="pagination-controls">
+                    <button id="prev-page" class="page-button" disabled>{{ _('Previous') }}</button>
+                    <span id="page-info">{{ _('Page') }} <span id="current-page">1</span></span>
+                    <button id="next-page" class="page-button">{{ _('Next') }}</button>
+                </div>                           
+            </div>
+        </div>
+    </div>
+
+    <!-- Proxy Config Dialog -->
+    <div id="settingDialog" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>{{ _('Settings') }}</h2>
+                <span class="close" onclick="closeSettingDialog()">&times;</span>
+            </div>
+            <div class="tabs">
+                <button class="tab-button active" onclick="switchTab('proxy-tab')">{{ _('Proxy') }}</button>
+                <button class="tab-button" onclick="switchTab('language-tab')">{{ _('Language') }}</button>
+                <button class="tab-button" onclick="switchTab('llm-tab')">{{ _('LLM API Keys') }}</button>
+                <button class="tab-button" onclick="switchTab('auto-save-tab')">{{ _('Auto-save') }}</button>
+            </div>
+            <div id="proxy-tab" class="tab-content active">
+                <div class="form-group">
+                    <label for="proxyType">{{ _('Proxy Type') }}</label>
+                    <select id="proxyType" class="select-control">
+                        <option value="socks5">SOCKS5</option>
+                        <option value="http">HTTP</option>
+                        <option value="https">HTTPS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="proxyHost">{{ _('Host') }}</label>
+                    <input type="text" id="proxyHost" class="form-input" placeholder="{{ _('e.g., 127.0.0.1') }}">
+                </div>
+                <div class="form-group">
+                    <label for="proxyPort">{{ _('Port') }}</label>
+                    <input type="text" id="proxyPort" class="form-input" placeholder="{{ _('e.g., 1080') }}">
+                </div>
+                <div class="form-group">
+                    <label>{{ _('Authentication (Optional)') }}</label>
+                    <div class="auth-inputs">
+                        <input type="text" id="proxyUsername" class="form-input" placeholder="{{ _('Username') }}">
+                        <input type="password" id="proxyPassword" class="form-input" placeholder="{{ _('Password') }}">
+                    </div>
+                </div>
+                <p class="help-text">{{ _('Leave empty for direct connection') }}</p>
+            </div>
+            <div id="language-tab" class="tab-content">
+                <div class="form-group">
+                    <label for="native-language">{{ _('Native Language') }}</label>
+                    <select id="native-language" class="select-control">
+                        {% for code, name in config.LANGUAGES.items() %}
+                        <option value="{{ code }}"{% if code == get_locale() %} selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subtitle-language">{{ _('Target Language') }}</label>
+                    <select id="subtitle-language" class="select-control">
+                        {% for code, name in config.LANGUAGES.items() %}
+                        <option value="{{ code }}"{% if code == get_locale() %} selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div id="llm-tab" class="tab-content">
+                <div class="form-group">
+                    <label for="openai-key">{{ _('OpenAI') }}</label>
+                    <input type="password" id="openai-key" placeholder="sk-...">
+                </div>
+                <div class="form-group">
+                    <label for="hunyuan-key">{{ _('Tencent Hunyuan') }}</label>
+                    <input type="password" id="hunyuan-key" placeholder="sk-...">
+                </div>
+                <div class="form-group">
+                    <label for="alibaba-key">{{ _('Alibaba Qianwen') }}</label>
+                    <input type="password" id="alibaba-key" placeholder="sk-...">
+                </div>
+                <div class="form-group">
+                    <label>{{ _('Default LLM Service') }}</label>
+                    <select id="default-llm" class="select-control">
+                        <option value="none">{{ _('No LLM') }}</option>
+                        <option value="openai">{{ _('OpenAI') }}</option>
+                        <option value="hunyuan">{{ _('Tencent Hunyuan') }}</option>
+                        <option value="alibaba">{{ _('Alibaba Qianwen') }}</option>
+                    </select>
+                </div>
+            </div>
+            <div id="auto-save-tab" class="tab-content">
+                <div class="form-group">
+                    <label for="autoSaveDuration">{{ _('Auto-save Duration (minutes)') }}</label>
+                    <div class="input-with-help">
+                        <input type="number" id="autoSaveDuration" min="0" step="1" value="3">
+                        <span class="help-text">{{ _('Set to 0 to disable auto-save') }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="saveProxyConfig()" class="primary-button">{{ _('Save') }}</button>
+                <button onclick="closeSettingDialog()" class="secondary-button">{{ _('Cancel') }}</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .videos-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .select-control {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+        }
+        .page-button {
+            padding: 5px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+        }
+        .page-button:disabled {
+            background: #f5f5f5;
+            cursor: not-allowed;
+        }
+        #page-info {
+            font-size: 14px;
+            color: #666;
+        }
+        .audio-controls {
+            margin-top: 10px;
+            width: 100%;
+        }
+        .audio-controls audio {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .video-info {
+            flex: 1;
+            min-width: 0;  /* Allow text to wrap */
+        }
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            word-break: break-word;
+        }
+        .video-duration {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .video-item {
+            display: flex;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .video-actions {
+            display: flex;
+            align-items: center;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .modal-header h2 {
+            margin: 0;
+        }
+        .close {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .tab-button {
+            padding: 10px 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: #666;
+            position: relative;
+        }
+        .tab-button.active {
+            color: #0066ff;
+        }
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #0066ff;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px 0;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .videos-foot {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .page-size {
+            flex: 1;
+        }
+
+        .duration-filter {
+            flex: 1;
+        }
+
+        .pagination-controls {
+            flex: 3;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form-group label {
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        .form-input {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-size: 14px;
+            max-width: 300px;
+        }
+
+        .auth-inputs {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            max-width: 300px;
+        }
+
+        .auth-inputs input {
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .select-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+        }
+        .auth-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .help-text {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .videos-section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .videos-section h1 {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            margin: 0;
+            padding: 15px 0;
+            padding-top: 0px;
+            z-index: 1;
+        }
+
+        .videos-section .videos-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .videos-section .videos-foot {
+            position: sticky;
+            bottom: 0;
+            background-color: white;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+
+        .channels-layout {
+            display: flex;
+            height: calc(100vh - 50px); /* Subtract nav-bar height */
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .channels-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            max-width: 400px;
+            height: calc(100% - 20px); /* Subtract bottom margin */
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .videos-section {
+            flex: 2;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 20px); /* Subtract bottom margin */
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        // Pass translations to JavaScript
+        window.translations = {
+            ...window.translations,
+            'noChannelsFound': "{{ _('No channels found') }}",
+            'searchingChannels': "{{ _('Searching channels...') }}",
+            'errorSearchingChannels': "{{ _('Error searching channels') }}",
+            'noFavoriteChannels': "{{ _('No favorite channels yet') }}",
+            'noVideosFound': "{{ _('No videos found') }}",
+            'errorLoadingVideos': "{{ _('Error loading videos') }}",
+            'save': "{{ _('Save') }}",
+            'saved': "{{ _('Saved') }}",
+            'saving': "{{ _('Saving...') }}",
+            'saveFailed': "{{ _('Save Failed') }}",
+            "loadingChannels": "{{ _('Loading channels...') }}",
+            "loadingAudios": "{{ _('Loading audios...') }}",            
+            'apiKeyMissing': "{{ _('Please set your API key first.') }}",
+            'saveSuccess': "{{ _('Save successful') }}",
+            'deleteSuccess': "{{ _('Delete successful') }}",
+            'deleteFailed': "{{ _('Delete failed') }}",
+            'proxyTestSuccess': "{{ _('Proxy test successful') }}",
+            'proxyTestFailed': "{{ _('Proxy test failed') }}"
+        };
+    </script>
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/state.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/channels.js') }}"></script>
+
+</body>
+</html>

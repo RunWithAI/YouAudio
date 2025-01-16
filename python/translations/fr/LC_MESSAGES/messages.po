@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 21:41-0800\n"
+"PO-Revision-Date: 2025-01-06 21:41-0800\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - Chaînes"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - Audios"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - Mots"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - Statistiques"
+
+msgid "Channels"
+msgstr "Chaînes"
+
+msgid "Audios"
+msgstr "Audios"
+
+msgid "Words"
+msgstr "Mots"
+
+msgid "Statistics"
+msgstr "Statistiques"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Enter channel name..."
+msgstr "Entrez le nom de la chaîne..."
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "Favorite"
+msgstr "Favoris"
+
+msgid "Please enter a channel name to search"
+msgstr "Veuillez entrer un nom de chaîne à rechercher"
+
+msgid "Videos"
+msgstr "Vidéos"
+
+msgid "Latest audios by selected channel"
+msgstr "Derniers audios de la chaîne sélectionnée"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Proxy"
+msgstr "Proxy"
+
+msgid "Target Language"
+msgstr "Langue cible"
+
+msgid "Native Language"
+msgstr "Langue maternelle"
+
+msgid "Proxy Type"
+msgstr "Type de proxy"
+
+msgid "Host"
+msgstr "Hôte"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Authentication (Optional)"
+msgstr "Authentification (Optionnel)"
+
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Leave empty for direct connection"
+msgstr "Laisser vide pour une connexion directe"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "No channels found"
+msgstr "Aucune chaîne trouvée"
+
+msgid "Searching channels..."
+msgstr "Recherche de chaînes..."
+
+msgid "Error searching channels"
+msgstr "Erreur lors de la recherche des chaînes"
+
+msgid "No favorite channels yet"
+msgstr "Pas encore de chaînes favorites"
+
+msgid "No videos found"
+msgstr "Aucune vidéo trouvée"
+
+msgid "Error loading videos"
+msgstr "Erreur lors du chargement des vidéos"
+
+msgid "Saved"
+msgstr "Enregistré"
+
+msgid "Saving..."
+msgstr "Enregistrement..."
+
+msgid "Save Failed"
+msgstr "Échec de l'enregistrement"
+
+msgid "All Segments"
+msgstr "Tous les segments"
+
+msgid "Marked Segments"
+msgstr "Segments marqués"
+
+msgid "Play"
+msgstr "Lecture"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "Replay"
+msgstr "Rejouer"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "Selected Text"
+msgstr "Texte sélectionné"
+
+msgid "Translation"
+msgstr "Traduction"
+
+msgid "Today"
+msgstr "Aujourd'hui"
+
+msgid "Audio Listening Duration"
+msgstr "Durée d'écoute audio"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "Durée d'écoute audio (minutes)"
+
+msgid "Words Mastered"
+msgstr "Mots maîtrisés"
+
+msgid "Words Forgotten"
+msgstr "Mots oubliés"
+
+msgid "Past 7 days"
+msgstr "7 derniers jours"
+
+msgid "Collected Words"
+msgstr "Mots collectés"
+
+msgid "Filter"
+msgstr "Filtrer"
+
+msgid "All"
+msgstr "Tout"
+
+msgid "Forgotten"
+msgstr "Oublié"
+
+msgid "Mastered"
+msgstr "Maîtrisé"
+
+msgid "Sort by"
+msgstr "Trier par"
+
+msgid "Word"
+msgstr "Mot"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Ascending"
+msgstr "Croissant"
+
+msgid "Descending"
+msgstr "Décroissant"
+
+msgid "Context"
+msgstr "Contexte"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "10 per page"
+msgstr "10 par page"
+
+msgid "20 per page"
+msgstr "20 par page"
+
+msgid "30 per page"
+msgstr "30 par page"
+
+msgid "50 per page"
+msgstr "50 par page"
+
+msgid "All Durations"
+msgstr "Toutes les durées"
+
+msgid "0-10 minutes"
+msgstr "0-10 minutes"
+
+msgid "10-30 minutes"
+msgstr "10-30 minutes"
+
+msgid "30+ minutes"
+msgstr "30+ minutes"
+
+msgid "Date (Newest)"
+msgstr "Date (Plus récent)"
+
+msgid "Most Viewed"
+msgstr "Les plus vus"
+
+msgid "Top Rated"
+msgstr "Les mieux notés"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "Loading audios..."
+msgstr "Chargement des audios..."
+
+msgid "Your browser does not support the audio element."
+msgstr "Votre navigateur ne prend pas en charge l'élément audio."
+
+msgid "Summary"
+msgstr "Résumé"
+
+msgid "Fetching..."
+msgstr "Récupération..."
+
+msgid "LLM API Keys"
+msgstr "Clés API LLM"
+
+msgid "Tencent Hunyuan"
+msgstr "Tencent Hunyuan"
+
+msgid "Alibaba Qianwen"
+msgstr "Alibaba Qianwen"
+
+msgid "Default LLM Service"
+msgstr "Service LLM par défaut"
+
+msgid "No transcript available to summarize"
+msgstr "Aucune transcription disponible à résumer"
+
+msgid "Auto-save"
+msgstr "Sauvegarde automatique"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "Durée de sauvegarde automatique (minutes)"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "Mettre à 0 pour désactiver la sauvegarde automatique"
+
+msgid "Words per page"
+msgstr "Mots par page"
+
+msgid "Statistics Over Time"
+msgstr "Statistiques dans le temps"
+
+msgid "Past Week"
+msgstr "Semaine dernière"
+
+msgid "Past Month"
+msgstr "Mois dernier"
+
+msgid "Past Quarter"
+msgstr "Trimestre dernier"
+
+msgid "Past Year"
+msgstr "Année dernière"
+
+msgid "Word saved successfully!"
+msgstr "Mot enregistré avec succès !"
+
+msgid "Failed to save word."
+msgstr "Échec de l'enregistrement du mot."
+
+msgid "Failed to generate summary."
+msgstr "Échec de la génération du résumé."
+
+msgid "Please set your API key first."
+msgstr "Veuillez d'abord définir votre clé API."
+
+msgid "Failed to get translation."
+msgstr "Échec de la récupération de la traduction."
+
+msgid "Open"
+msgstr "Ouvrir"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "Loading channels..."
+msgstr "Chargement des chaînes..."

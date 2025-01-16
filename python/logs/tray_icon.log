@@ -1,0 +1,11 @@
+2025-01-09 14:38:33,984 - __main__ - INFO - Starting tray icon...
+2025-01-09 14:38:33,985 - __main__ - INFO - Resource path: /Users/whatsthat/Workspace/Experiments/YouAudio/pc
+2025-01-09 14:38:33,985 - __main__ - INFO - Static directory exists. Contents: ['.DS_Store', 'css', 'js', 'image']
+2025-01-09 14:38:33,985 - __main__ - INFO - Image directory exists. Contents: ['learning_cats.jpg']
+2025-01-09 14:38:33,985 - __main__ - INFO - Attempting to load icon from: static/image/learning_cats.jpg
+2025-01-09 14:38:33,985 - __main__ - INFO - Loading icon from: /Users/whatsthat/Workspace/Experiments/YouAudio/pc/static/image/learning_cats.jpg
+2025-01-09 14:38:34,023 - __main__ - INFO - Icon loaded successfully
+2025-01-09 14:38:34,023 - __main__ - INFO - Successfully loaded icon
+2025-01-09 14:38:34,023 - __main__ - INFO - Creating system tray icon...
+2025-01-09 14:38:34,163 - __main__ - INFO - Starting icon.run()
+2025-01-09 14:38:37,628 - __main__ - INFO - Browser opened automatically

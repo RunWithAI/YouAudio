@@ -1,0 +1,310 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-03 21:34\n"
+"PO-Revision-Date: 2025-01-03 21:34\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - Canales"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - Audios"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - Palabras"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - Estadísticas"
+
+msgid "Channels"
+msgstr "Canales"
+
+msgid "Audios"
+msgstr "Audios"
+
+msgid "Words"
+msgstr "Palabras"
+
+msgid "Statistics"
+msgstr "Estadísticas"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Enter channel name..."
+msgstr "Ingrese el nombre del canal..."
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Favorite"
+msgstr "Favorito"
+
+msgid "Please enter a channel name to search"
+msgstr "Por favor ingrese un nombre de canal para buscar"
+
+msgid "Videos"
+msgstr "Videos"
+
+msgid "Latest audios by selected channel"
+msgstr "Últimos audios del canal seleccionado"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Proxy"
+msgstr "Proxy"
+
+msgid "Target Language"
+msgstr "Idioma Objetivo"
+
+msgid "Native Language"
+msgstr "Idioma Nativo"
+
+msgid "Proxy Type"
+msgstr "Tipo de Proxy"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "Port"
+msgstr "Puerto"
+
+msgid "Authentication (Optional)"
+msgstr "Autenticación (Opcional)"
+
+msgid "Username"
+msgstr "Usuario"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Leave empty for direct connection"
+msgstr "Dejar vacío para conexión directa"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "No channels found"
+msgstr "No se encontraron canales"
+
+msgid "Searching channels..."
+msgstr "Buscando canales..."
+
+msgid "Error searching channels"
+msgstr "Error al buscar canales"
+
+msgid "No favorite channels yet"
+msgstr "Aún no hay canales favoritos"
+
+msgid "No videos found"
+msgstr "No se encontraron videos"
+
+msgid "Error loading videos"
+msgstr "Error al cargar videos"
+
+msgid "Saved"
+msgstr "Guardado"
+
+msgid "Saving..."
+msgstr "Guardando..."
+
+msgid "Save Failed"
+msgstr "Error al guardar"
+
+msgid "All Segments"
+msgstr "Todos los segmentos"
+
+msgid "Marked Segments"
+msgstr "Segmentos marcados"
+
+msgid "Play"
+msgstr "Reproducir"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Replay"
+msgstr "Reproducir nuevamente"
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "Selected Text"
+msgstr "Texto seleccionado"
+
+msgid "Translation"
+msgstr "Traducción"
+
+msgid "Today"
+msgstr "Hoy"
+
+msgid "Audio Listening Duration"
+msgstr "Duración de escucha de audio"
+
+msgid "minutes"
+msgstr "Minutos"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "Duración de escucha de audio (minutos)"
+
+msgid "Words Mastered"
+msgstr "Palabras dominadas"
+
+msgid "Words Forgotten"
+msgstr "Palabras olvidadas"
+
+msgid "Past 7 days"
+msgstr "Últimos 7 días"
+
+msgid "Collected Words"
+msgstr "Palabras recopiladas"
+
+msgid "Filter"
+msgstr "Filtro"
+
+msgid "All"
+msgstr "Todo"
+
+msgid "Forgotten"
+msgstr "Olvidadas"
+
+msgid "Mastered"
+msgstr "Dominadas"
+
+msgid "Sort by"
+msgstr "Ordenar por"
+
+msgid "Word"
+msgstr "Palabra"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Ascending"
+msgstr "Ascendente"
+
+msgid "Descending"
+msgstr "Descendente"
+
+msgid "Context"
+msgstr "Contexto"
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "Mastered"
+msgstr "Dominado"
+
+msgid "Forgotten"
+msgstr "Olvidado"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "10 per page"
+msgstr "10 por página"
+
+msgid "20 per page"
+msgstr "20 por página"  
+
+msgid "30 per page"    
+msgstr "30 por página"
+
+msgid "50 per page"
+msgstr "50 por página"
+
+
+msgid "All Durations"
+msgstr "Todas las duraciones"
+
+msgid "0-10 minutes"
+msgstr "0-10 minutos"
+
+msgid "10-30 minutes"
+msgstr "10-30 minutos"
+
+msgid "30+ minutes"
+msgstr "30+ minutos"
+
+msgid "Date (Newest)"
+msgstr "Fecha (Reciente)"
+
+msgid "Most Viewed"
+msgstr "Más vistas"
+
+msgid "Top Rated"
+msgstr "Mejor calificados"
+
+msgid "Page"
+msgstr "Página"
+
+msgid "Loading audios..."    
+msgstr "Cargando audios..."
+
+msgid "Your browser does not support the audio element."
+msgstr "Su navegador no soporta el elemento de audio."
+
+msgid "Summary"
+msgstr "Resumen"
+
+msgid "Fetching..."
+msgstr "Generando..."
+
+msgid "No transcript available to summarize"
+msgstr "No hay transcripción disponible para generar un resumen"
+
+msgid "Auto-save"
+msgstr "Guardado automático"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "Duración de guardado automático (minutos)"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "Establecer en 0 para deshabilitar el guardado automático"
+
+msgid "Words per page"
+msgstr "Palabras por página"
+
+msgid "Statistics Over Time"
+msgstr "Estadísticas a lo largo del tiempo"
+
+msgid "Past Week"
+msgstr "Semana pasada"
+
+msgid "Past Month"
+msgstr "Mes pasado"
+
+msgid "Past Quarter"
+msgstr "Trimestre pasado"
+
+msgid "Past Year"
+msgstr "Año pasado"
+
+msgid "Word saved successfully!"
+msgstr "Palabra guardada con éxito!"
+
+msgid "Failed to save word."
+msgstr "Error al guardar la palabra."
+
+msgid "Failed to generate summary."
+msgstr "Error al generar el resumen."
+
+msgid "Please set your API key first."
+msgstr "Por favor establezca su clave de API primero."
+
+msgid "Failed to get translation."
+msgstr "Error al obtener la traducción."
+
+msgid "Loading channels..."
+msgstr "Cargando canales..."

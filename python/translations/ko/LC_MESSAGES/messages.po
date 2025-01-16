@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 21:41-0800\n"
+"PO-Revision-Date: 2025-01-06 21:41-0800\n"
+"Last-Translator: \n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - 채널"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - 오디오"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - 단어"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - 통계"
+
+msgid "Channels"
+msgstr "채널"
+
+msgid "Audios"
+msgstr "오디오"
+
+msgid "Words"
+msgstr "단어"
+
+msgid "Statistics"
+msgstr "통계"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Enter channel name..."
+msgstr "채널 이름 입력..."
+
+msgid "Search"
+msgstr "검색"
+
+msgid "Favorite"
+msgstr "즐겨찾기"
+
+msgid "Please enter a channel name to search"
+msgstr "검색할 채널 이름을 입력하세요"
+
+msgid "Videos"
+msgstr "동영상"
+
+msgid "Latest audios by selected channel"
+msgstr "선택한 채널의 최신 오디오"
+
+msgid "Language"
+msgstr "언어"
+
+msgid "Proxy"
+msgstr "프록시"
+
+msgid "Target Language"
+msgstr "목표 언어"
+
+msgid "Native Language"
+msgstr "모국어"
+
+msgid "Proxy Type"
+msgstr "프록시 유형"
+
+msgid "Host"
+msgstr "호스트"
+
+msgid "Port"
+msgstr "포트"
+
+msgid "Authentication (Optional)"
+msgstr "인증 (선택사항)"
+
+msgid "Username"
+msgstr "사용자 이름"
+
+msgid "Password"
+msgstr "비밀번호"
+
+msgid "Leave empty for direct connection"
+msgstr "직접 연결하려면 비워두세요"
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "No channels found"
+msgstr "채널을 찾을 수 없습니다"
+
+msgid "Searching channels..."
+msgstr "채널을 검색 중입니다..."
+
+msgid "Error searching channels"
+msgstr "채널 검색 중 오류가 발생했습니다"
+
+msgid "No favorite channels yet"
+msgstr "즐겨찾기 채널이 없습니다"
+
+msgid "No videos found"
+msgstr "동영상이 없습니다"
+
+msgid "Error loading videos"
+msgstr "동영상 로딩 중 오류가 발생했습니다"
+
+msgid "Saved"
+msgstr "저장되었습니다"
+
+msgid "Saving..."
+msgstr "저장 중입니다..."
+
+msgid "Save Failed"
+msgstr "저장 실패"
+
+msgid "All Segments"
+msgstr "모든 세그먼트"
+
+msgid "Marked Segments"
+msgstr "선택된 세그먼트"
+
+msgid "Play"
+msgstr "재생"
+
+msgid "Previous"
+msgstr "이전"
+
+msgid "Replay"
+msgstr "재시작"
+
+msgid "Next"
+msgstr "다음"
+
+msgid "Selected Text"
+msgstr "선택된 텍스트"
+
+msgid "Translation"
+msgstr "번역"
+
+msgid "Today"
+msgstr "오늘"
+
+msgid "Audio Listening Duration"
+msgstr "오디오 재생 시간"
+
+msgid "minutes"
+msgstr "분"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "오디오 재생 시간(분)"
+
+msgid "Words Mastered"
+msgstr "학습된 단어"
+
+msgid "Words Forgotten"
+msgstr "잊혀진 단어"
+
+msgid "Past 7 days"
+msgstr "지난 7일"
+
+msgid "Collected Words"
+msgstr "수집된 단어"
+
+msgid "Filter"
+msgstr "필터"
+
+msgid "All"
+msgstr "모두"
+
+msgid "Forgotten"
+msgstr "잊혀진"
+
+msgid "Mastered"
+msgstr "학습된"
+
+msgid "Sort by"
+msgstr "정렬 기준"
+
+msgid "Word"
+msgstr "단어"
+
+msgid "Date"
+msgstr "날짜"
+
+msgid "Ascending"
+msgstr "오름차순"
+
+msgid "Descending"
+msgstr "내림차순"
+
+msgid "Context"
+msgstr "문맥"
+
+msgid "Actions"
+msgstr "동작"
+
+msgid "Mastered"
+msgstr "학습된"
+
+msgid "Forgotten"
+msgstr "잊혀진"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "10 per page"
+msgstr "페이지당 10개"
+
+msgid "20 per page"
+msgstr "페이지당 20개"
+
+msgid "30 per page"
+msgstr "페이지당 30개"
+
+msgid "50 per page"
+msgstr "페이지당 50개"
+
+msgid "All Durations"
+msgstr "모든 시간"
+
+msgid "0-10 minutes"
+msgstr "0-10분"
+
+msgid "10-30 minutes"
+msgstr "10-30분"
+
+msgid "30+ minutes"
+msgstr "30분 이상"
+
+msgid "Date (Newest)"
+msgstr "날짜 (최신)"
+
+msgid "Most Viewed"
+msgstr "가장 많이 본"
+
+msgid "Top Rated"
+msgstr "최고 등급"
+
+msgid "Page"
+msgstr "페이지"
+
+msgid "Loading audios..."
+msgstr "오디오 로딩 중..."
+
+msgid "Your browser does not support the audio element."
+msgstr "브라우저가 오디오 요소를 지원하지 않습니다."
+
+msgid "Summary"
+msgstr "요약"
+
+msgid "Fetching..."
+msgstr "가져오는 중..."
+
+msgid "LLM API Keys"
+msgstr "LLM API 키"
+
+msgid "Tencent Hunyuan"
+msgstr "텐센트 혼원"
+
+msgid "Alibaba Qianwen"
+msgstr "알리바바 천문"
+
+msgid "Default LLM Service"
+msgstr "기본 LLM 서비스"
+
+msgid "No transcript available to summarize"
+msgstr "요약할 수 있는 대본이 없습니다"
+
+msgid "Auto-save"
+msgstr "자동 저장"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "자동 저장 시간(분)"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "자동 저장을 비활성화하려면 0으로 설정하세요"
+
+msgid "Words per page"
+msgstr "페이지당 단어 수"
+
+msgid "Statistics Over Time"
+msgstr "시간에 따른 통계"
+
+msgid "Past Week"
+msgstr "지난 주"
+
+msgid "Past Month"
+msgstr "지난 달"
+
+msgid "Past Quarter"
+msgstr "지난 분기"
+
+msgid "Past Year"
+msgstr "지난 해"
+
+msgid "Word saved successfully!"
+msgstr "단어가 성공적으로 저장되었습니다!"
+
+msgid "Failed to save word."
+msgstr "단어 저장에 실패했습니다."
+
+msgid "Failed to generate summary."
+msgstr "요약 생성에 실패했습니다."
+
+msgid "Please set your API key first."
+msgstr "먼저 API 키를 설정해주세요."
+
+msgid "Failed to get translation."
+msgstr "번역을 가져오는데 실패했습니다."
+
+msgid "Open"
+msgstr "열기"
+
+msgid "Quit"
+msgstr "종료"
+
+msgid "Loading channels..."
+msgstr "채널 로딩 중..."

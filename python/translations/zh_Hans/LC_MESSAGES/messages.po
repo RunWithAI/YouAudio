@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 21:41-0800\n"
+"PO-Revision-Date: 2025-01-06 21:41-0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - 频道"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - 音频"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - 单词"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - 统计"
+
+msgid "Channels"
+msgstr "频道"
+
+msgid "Audios"
+msgstr "音频"
+
+msgid "Words"
+msgstr "单词"
+
+msgid "Statistics"
+msgstr "统计"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Enter channel name..."
+msgstr "输入频道名称..."
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Favorite"
+msgstr "收藏"
+
+msgid "Please enter a channel name to search"
+msgstr "请输入要搜索的频道名称"
+
+msgid "Videos"
+msgstr "视频"
+
+msgid "Latest audios by selected channel"
+msgstr "最新节目"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Proxy"
+msgstr "代理"
+
+msgid "Target Language"
+msgstr "目标语言"
+
+msgid "Native Language"
+msgstr "母语"
+
+msgid "Proxy Type"
+msgstr "代理类型"
+
+msgid "Host"
+msgstr "主机"
+
+msgid "Port"
+msgstr "端口"
+
+msgid "Authentication (Optional)"
+msgstr "认证（可选）"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Leave empty for direct connection"
+msgstr "留空直连"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "No channels found"
+msgstr "没有找到频道"
+
+msgid "Searching channels..."
+msgstr "搜索频道..."
+
+msgid "Error searching channels"
+msgstr "搜索频道时出错"
+
+msgid "No favorite channels yet"
+msgstr "还没有收藏频道"
+
+msgid "No videos found"
+msgstr "没有找到视频"
+
+msgid "Error loading videos"
+msgstr "加载视频时出错"
+
+msgid "Saved"
+msgstr "已保存"
+
+msgid "Saving..."
+msgstr "保存中..."
+
+msgid "Save Failed"
+msgstr "保存失败"
+
+msgid "All Segments"
+msgstr "所有片段"
+
+msgid "Marked Segments"
+msgstr "已标记的片段"
+
+msgid "Play"
+msgstr "播放"
+
+msgid "Previous"
+msgstr "上一页"
+
+msgid "Replay"
+msgstr "重新播放"
+
+msgid "Next"
+msgstr "下一页"
+
+msgid "Selected Text"
+msgstr "已选文本"
+
+msgid "Translation"
+msgstr "翻译"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Audio Listening Duration"
+msgstr "音频播放时长"
+
+msgid "minutes"
+msgstr "分钟"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "音频播放时长(分钟)"
+
+msgid "Words Mastered"
+msgstr "掌握单词"
+
+msgid "Words Forgotten"
+msgstr "遗忘单词"
+
+msgid "Past 7 days"
+msgstr "过去7天"
+
+msgid "Collected Words"
+msgstr "收集单词"
+
+msgid "Filter"
+msgstr "过滤"
+
+msgid "All"
+msgstr "全部"
+
+msgid "Forgotten"
+msgstr "遗忘"
+
+msgid "Mastered"
+msgstr "掌握"
+
+msgid "Sort by"
+msgstr "排序"
+
+msgid "Word"
+msgstr "单词"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Ascending"
+msgstr "升序"
+
+msgid "Descending"
+msgstr "降序"
+
+msgid "Context"
+msgstr "上下文"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Mastered"
+msgstr "掌握"
+
+msgid "Forgotten"
+msgstr "遗忘"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "10 per page"
+msgstr "10 每页"
+
+msgid "20 per page"
+msgstr "20 每页"  
+
+msgid "30 per page"    
+msgstr "30 每页"
+
+msgid "50 per page"
+msgstr "50 每页"
+
+
+msgid "All Durations'
+msgstr "所有时长'
+
+msgid "0-10 minutes'
+msgstr "0-10 分钟'
+
+msgid "10-30 minutes'
+msgstr "10-30 分钟'
+
+msgid "30+ minutes'
+msgstr "30+ 分钟'
+
+msgid "Date (Newest)"
+msgstr "日期(最新)"
+
+msgid "Most Viewed"
+msgstr "最受欢迎"
+
+msgid "Top Rated"
+msgstr "最受欢迎"
+
+msgid "Page"
+msgstr "页"
+
+msgid "Loading audios..."    
+msgstr "加载音频..."
+
+msgid "Your browser does not support the audio element."
+msgstr "您的浏览器不支持音频元素."
+
+msgid "Summary"
+msgstr "摘要"
+
+msgid "Fetching..."
+msgstr "生成中..."
+
+msgid "LLM API Keys"
+msgstr "API密钥"
+
+msgid "Tencent Hunyuan"
+msgstr "腾讯混元"
+
+msgid "Alibaba Qianwen"
+msgstr "阿里巴巴千问"
+
+msgid "Default LLM Service"
+msgstr "默认语言模型服务"
+
+msgid "No transcript available to summarize"
+msgstr "没有文字稿可供生成摘要"
+
+msgid "Auto-save"
+msgstr "自动保存"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "自动保存时长（分钟）"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "设置为0以禁用自动保存"
+
+msgid "Words per page"
+msgstr "每页单词数"
+
+msgid "Statistics Over Time"
+msgstr "历史数据"
+
+msgid "Past Week"
+msgstr "过去一周"
+
+msgid "Past Month"
+msgstr "过去一个月"
+
+msgid "Past Quarter"
+msgstr "过去一个季度"
+
+msgid "Past Year"
+msgstr "过去一年"
+
+msgid "Word saved successfully!"
+msgstr "单词保存成功!"
+
+msgid "Failed to save word."
+msgstr "保存单词失败。"
+
+msgid "Failed to generate summary."
+msgstr "生成摘要失败。"
+
+msgid "Please set your API key first."
+msgstr "请先设置API密钥。"
+
+msgid "Failed to get translation."
+msgstr "获取翻译失败。"
+
+msgid "Loading channels..."
+msgstr "加载频道..."

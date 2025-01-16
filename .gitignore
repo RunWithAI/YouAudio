@@ -1,0 +1,8 @@
+downloads/
+build/
+audio/
+venv/
+audio_files/
+temp_audio/
+audiotube.db
+config.json

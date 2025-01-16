@@ -1,0 +1,316 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 22:09-0800\n"
+"PO-Revision-Date: 2025-01-06 22:09-0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - 頻道"
+
+msgid "YouAudio - Audios"
+msgstr "YouAudio - 音頻"
+
+msgid "YouAudio - Words"
+msgstr "YouAudio - 單詞"
+
+msgid "YouAudio - Statistics"
+msgstr "YouAudio - 統計"
+
+msgid "Channels"
+msgstr "頻道"
+
+msgid "Audios"
+msgstr "音頻"
+
+msgid "Words"
+msgstr "單詞"
+
+msgid "Statistics"
+msgstr "統計"
+
+msgid "Settings"
+msgstr "設置"
+
+msgid "Enter channel name..."
+msgstr "輸入頻道名稱..."
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Favorite"
+msgstr "收藏"
+
+msgid "Please enter a channel name to search"
+msgstr "請輸入要搜索的頻道名稱"
+
+msgid "Videos"
+msgstr "視頻"
+
+msgid "Latest audios by selected channel"
+msgstr "最新節目"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Proxy"
+msgstr "代理"
+
+msgid "Target Language"
+msgstr "目標語言"
+
+msgid "Native Language"
+msgstr "母語"
+
+msgid "Proxy Type"
+msgstr "代理類型"
+
+msgid "Host"
+msgstr "主機"
+
+msgid "Port"
+msgstr "端口"
+
+msgid "Authentication (Optional)"
+msgstr "認證（可選）"
+
+msgid "Username"
+msgstr "用戶名"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Leave empty for direct connection"
+msgstr "留空直連"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "No channels found"
+msgstr "沒有找到頻道"
+
+msgid "Searching channels..."
+msgstr "搜索頻道..."
+
+msgid "Error searching channels"
+msgstr "搜索頻道時出錯"
+
+msgid "No favorite channels yet"
+msgstr "還沒有收藏頻道"
+
+msgid "No videos found"
+msgstr "沒有找到視頻"
+
+msgid "Error loading videos"
+msgstr "加載視頻時出錯"
+
+msgid "Saved"
+msgstr "已保存"
+
+msgid "Saving..."
+msgstr "保存中..."
+
+msgid "Save Failed"
+msgstr "保存失敗"
+
+msgid "All Segments"
+msgstr "所有片段"
+
+msgid "Marked Segments"
+msgstr "已標記的片段"
+
+msgid "Play"
+msgstr "播放"
+
+msgid "Previous"
+msgstr "上一頁"
+
+msgid "Replay"
+msgstr "重新播放"
+
+msgid "Next"
+msgstr "下一頁"
+
+msgid "Selected Text"
+msgstr "已選文本"
+
+msgid "Translation"
+msgstr "翻譯"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Audio Listening Duration"
+msgstr "音頻播放時長"
+
+msgid "minutes"
+msgstr "分鐘"
+
+msgid "Audio Listening Duration (minutes)"
+msgstr "音頻播放時長(分鐘)"
+
+msgid "Words Mastered"
+msgstr "掌握單詞"
+
+msgid "Words Forgotten"
+msgstr "遺忘單詞"
+
+msgid "Past 7 days"
+msgstr "過去7天"
+
+msgid "Collected Words"
+msgstr "收集單詞"
+
+msgid "Filter"
+msgstr "過濾"
+
+msgid "All"
+msgstr "全部"
+
+msgid "Forgotten"
+msgstr "遺忘"
+
+msgid "Mastered"
+msgstr "掌握"
+
+msgid "Sort by"
+msgstr "排序"
+
+msgid "Word"
+msgstr "單詞"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Ascending"
+msgstr "升序"
+
+msgid "Descending"
+msgstr "降序"
+
+msgid "Context"
+msgstr "上下文"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "10 per page"
+msgstr "10 每頁"
+
+msgid "20 per page"
+msgstr "20 每頁"  
+
+msgid "30 per page"    
+msgstr "30 每頁"
+
+msgid "50 per page"
+msgstr "50 每頁"
+
+msgid "All Durations"
+msgstr "所有時長"
+
+msgid "0-10 minutes"
+msgstr "0-10 分鐘"
+
+msgid "10-30 minutes"
+msgstr "10-30 分鐘"
+
+msgid "30+ minutes"
+msgstr "30+ 分鐘"
+
+msgid "Date (Newest)"
+msgstr "日期(最新)"
+
+msgid "Most Viewed"
+msgstr "最受歡迎"
+
+msgid "Top Rated"
+msgstr "最受歡迎"
+
+msgid "Page"
+msgstr "頁"
+
+msgid "Loading audios..."    
+msgstr "加載音頻..."
+
+msgid "Your browser does not support the audio element."
+msgstr "您的瀏覽器不支持音頻元素"
+
+msgid "Summary"
+msgstr "摘要"
+
+msgid "Fetching..."
+msgstr "生成中..."
+
+msgid "No transcript available to summarize"
+msgstr "沒有文字稿可供生成摘要"
+
+msgid "LLM API Keys"
+msgstr "API密钥"
+
+msgid "Tencent Hunyuan"
+msgstr "腾讯混云"
+
+msgid "Alibaba Qianwen"
+msgstr "阿里巴巴千问"
+
+msgid "Default LLM Service"
+msgstr "默认语言模型服务"
+
+msgid "Auto-save"
+msgstr "自動保存"
+
+msgid "Auto-save Duration (minutes)"
+msgstr "自動保存時長（分鐘）"
+
+msgid "Set to 0 to disable auto-save"
+msgstr "設置為0以禁用自動保存"
+
+msgid "Words per page"
+msgstr "每頁單詞數"
+
+msgid "Statistics Over Time"
+msgstr "歷史數據"
+
+msgid "Past Week"
+msgstr "過去一週"
+
+msgid "Past Month"
+msgstr "過去一個月"
+
+msgid "Past Quarter"
+msgstr "過去一季度"
+
+msgid "Past Year"
+msgstr "過去一年"
+
+msgid "Word saved successfully!"
+msgstr "單詞保存成功!"
+
+msgid "Failed to save word."
+msgstr "保存單詞失敗。"
+
+msgid "Failed to generate summary."
+msgstr "生成摘要失敗。"
+
+msgid "Please set your API key first."
+msgstr "請先設置API密鑰。"
+
+msgid "Failed to get translation."
+msgstr "獲取翻譯失敗。"
+
+msgid "Loading channels..."
+msgstr "載入頻道中..."

@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YouAudio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-03 21:34\n"
+"PO-Revision-Date: 2025-01-03 21:34\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "YouAudio - Channels"
+msgstr "YouAudio - Channels"
+
+msgid "Channels"
+msgstr "Channels"
+
+msgid "Words"
+msgstr "Words"
+
+msgid "Statistics"
+msgstr "Statistics"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Enter channel name..."
+msgstr "Enter channel name..."
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Favorite"
+msgstr "Favorite"
+
+msgid "Please enter a channel name to search"
+msgstr "Please enter a channel name to search"
+
+msgid "Videos"
+msgstr "Videos"
+
+msgid "Latest videos by selected channel"
+msgstr "Latest videos by selected channel"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Proxy"
+msgstr "Proxy"
+
+msgid "Target Language:"
+msgstr "Target Language:"
+
+msgid "Native Language:"
+msgstr "Native Language:"
+
+msgid "Proxy Type:"
+msgstr "Proxy Type:"
+
+msgid "Host:"
+msgstr "Host:"
+
+msgid "Port:"
+msgstr "Port:"
+
+msgid "Authentication (Optional):"
+msgstr "Authentication (Optional):"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Leave empty for direct connection"
+msgstr "Leave empty for direct connection"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "No channels found"
+msgstr "No channels found"
+
+msgid "Searching channels..."
+msgstr "Searching channels..."
+
+msgid "Error searching channels"
+msgstr "Error searching channels"
+
+msgid "No favorite channels yet"
+msgstr "No favorite channels yet"
+
+msgid "No videos found"
+msgstr "No videos found"
+
+msgid "Error loading videos"
+msgstr "Error loading videos"
+
+msgid "Saved"
+msgstr "Saved"
+
+msgid "Saving..."
+msgstr "Saving..."
+
+msgid "Save Failed"
+msgstr "Save Failed"
+
+msgid "Loading channels..."
+msgstr "Loading channels..."
